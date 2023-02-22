@@ -1,4 +1,4 @@
-# -chatgpt-vpn
+# -chatgpt-vpn 新手写的第一个项目，如果能帮助到您，麻烦给个星星鼓励一下，谢谢
 此项目可以半自动傻瓜式注册outlook邮箱和vpn账号，每注册一次，可免费使用该vpn一天，此vpn可以稳定打开chatgpt
 
 该vpn的台湾和美国节点可稳定使用chatgpt，此vpn新用户注册可免费获得一天使用时长，因此有了这个自动注册outlook邮箱（outlook邮箱无需手机验证码，因此可无限注册），并自动注册vpn账号的项目。
