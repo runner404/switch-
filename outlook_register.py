@@ -73,5 +73,3 @@ next_button1.click()
 
 print("已注册邮箱",first_line)
 
-# 关闭浏览器
-driver.close()
