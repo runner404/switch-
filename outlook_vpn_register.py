@@ -112,7 +112,8 @@ if confirm == "yes" or confirm == "是":
         f.seek(0)  # 将文件指针移动到开头
         f.writelines(data[1:])  # 写入除第一行之外的数据
         f.truncate()  # 截断文件，删除最后一行可能存在的多余内容
-    print("已删除")
+    print("已删除已注册邮箱")
+    print("恭喜你拥有了vpn，麻烦您在GitHub点一颗星星鼓励一下！")
 else:
     # 不执行后续代码
     print("注册已中断，请重新开始")
