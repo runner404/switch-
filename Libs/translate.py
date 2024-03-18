@@ -17,20 +17,21 @@ def translate_dict(dict):
     #返回翻译后的字典
     return tranlated_dict
 
-def translated_table(table,col):
+def translated_table(table,tot_col,tr_col=1):
     translated_table = []
     # 初始化翻译器
     translator = Translator()
     for table_tuple in tqdm(table, desc='Translating', total=len(table)):
         translated_list = []
         # 执行翻译
-        for i in range(0,col):
+        for i in range(0,tr_col):
             if isinstance(table_tuple[i],str):
                 text_to_translate = table_tuple[i]
-                #translation = translator.translate(text_to_translate,dest = 'zh-cn')
                 translation = translator.translate(text_to_translate, dest="zh-cn")
                 translated_list.append(translation.text)
             else:
-                translated_list.append(table_tuple[i])  
+                translated_list.append(table_tuple[i])
+        if i<tot_col:
+            translated_list.extend(table_tuple[i+1:]) 
         translated_table.append(tuple(translated_list))
     return translated_table
